@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/offer.schema.json",
+    "allOf": [
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
+        },
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
+        }
+    ],
+    "title": "Offer",
+    "description": "https://schema.org/Offer",
+    "type": "object",
+    "required": [
+        "price",
+        "priceCurrency"
+    ],
+    "properties": {
+        "additionalProperty": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
+        },
+        "price": {
+            "type": "number"
+        },
+        "priceCurrency": {
+            "type": "string"
+        },
+        "seller": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        }
+    }
+}

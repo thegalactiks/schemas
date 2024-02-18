@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json",
+    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json",
+    "title": "QuantitativeValue",
+    "description": "https://schema.org/QuantitativeValue",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "maxValue": {
+            "type": "number"
+        },
+        "minValue": {
+            "type": "number"
+        },
+        "value": {
+            "type": "number"
+        }
+    }
+}

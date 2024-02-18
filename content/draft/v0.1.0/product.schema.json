@@ -1,0 +1,73 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/product.schema.json",
+    "allOf": [
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
+        },
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
+        }
+    ],
+    "title": "Product",
+    "description": "https://schema.org/Product",
+    "type": "object",
+    "required": [
+        "url",
+        "dateCreated",
+        "dateModified"
+    ],
+    "properties": {
+        "brand": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "color": {
+            "type": "string"
+        },
+        "depth": {
+            "type": "string"
+        },
+        "gtin": {
+            "type": "string"
+        },
+        "hasEnergyConsumptionDetails": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/energy-consumption-details.schema.json"
+        },
+        "hasMeasurement": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "height": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "manufacturer": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "model": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "additionalProperty": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
+        },
+        "offers": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/offer.schema.json"
+            }
+        },
+        "sku": {
+            "type": "string"
+        },
+        "weight": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "width": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        }
+    }
+}

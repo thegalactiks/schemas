@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$extends": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json",
+    "title": "Galactiks Extras",
+    "description": "",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "tags": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "listingPage": {
+            "type": "boolean"
+        },
+        "path": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json",
+    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json",
+    "title": "PropertyValue",
+    "description": "https://schema.org/PropertyValue",
+    "type": "object",
+    "required": [
+        "value"
+    ],
+    "properties": {
+        "value": {
+            "type": "string"
+        },
+        "minValue": {
+            "type": "number"
+        },
+        "maxValue": {
+            "type": "number"
+        },
+        "unitCode": {
+            "type": "string"
+        },
+        "unitText": {
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/energy-consumption-details.schema.json",
+    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json",
+    "title": "EnergyConsumptionDetails",
+    "description": "https://schema.org/EnergyConsumptionDetails",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "energyEfficiencyScaleMax": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/eu-energy-efficiency-enumeration.schema.json"
+        },
+        "energyEfficiencyScaleMin": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/eu-energy-efficiency-enumeration.schema.json"
+        }
+    }
+}

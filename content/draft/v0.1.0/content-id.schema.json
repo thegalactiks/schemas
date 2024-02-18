@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json",
+    "title": "Content Id",
+    "description": "Content Id",
+    "type": "object",
+    "required": [
+        "@id"
+    ],
+    "properties": {
+        "@id": {
+            "type": "string"
+        }
+    }
+}

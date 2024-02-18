@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json",
+    "title": "Thing",
+    "description": "https://schema.org/Thing",
+    "type": "object",
+    "required": [
+        "identifier"
+    ],
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string"
+        },
+        "identifier": {
+            "type": "string"
+        },
+        "image": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/image.schema.json"
+        },
+        "sameAs": {
+            "type": "string"
+        }
+    }
+}

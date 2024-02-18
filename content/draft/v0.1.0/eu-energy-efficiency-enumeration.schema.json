@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/eu-energy-efficiency-enumeration.schema.json",
+    "title": "EUEnergyEfficiencyEnumeration",
+    "description": "https://schema.org/EUEnergyEfficiencyEnumeration",
+    "type": "string",
+    "enum": [
+        "EUEnergyEfficiencyCategoryA",
+        "EUEnergyEfficiencyCategoryA1Plus",
+        "EUEnergyEfficiencyCategoryA2Plus",
+        "EUEnergyEfficiencyCategoryA3Plus",
+        "EUEnergyEfficiencyCategoryB",
+        "EUEnergyEfficiencyCategoryC",
+        "EUEnergyEfficiencyCategoryD",
+        "EUEnergyEfficiencyCategoryE",
+        "EUEnergyEfficiencyCategoryF",
+        "EUEnergyEfficiencyCategoryG"
+    ]
+}

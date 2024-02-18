@@ -1,0 +1,65 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/creative-work.schema.json",
+    "allOf": [
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
+        },
+
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
+        }
+    ],
+    "title": "Creative Work",
+    "description": "https://schema.org/CreativeWork",
+    "type": "object",
+    "required": [
+        "dateCreated",
+        "dateModified"
+    ],
+    "properties": {
+        "author": {
+            "type": "string"
+        },
+        "headline": {
+            "type": "string"
+        },
+        "dateCreated": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "dateModified": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "datePublished": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "isPartOf": {
+            "type": "string"
+        },
+        "inLanguage": {
+            "type": "string"
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "license": {
+            "type": "string"
+        },
+        "position": {
+            "type": "number"
+        },
+        "translationOfWork": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "workTranslation": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        }
+    },
+    "unevaluatedProperties": false
+}
