@@ -1,0 +1,125 @@
+{
+  "$schema": "https://frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "galactiks",
+  "frontMatter.taxonomy.alignFilename": true,
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "default",
+      "previewPath": null,
+      "pageBundle": false,
+      "filePrefix": null,
+      "fields": [
+        {
+          "title": "Title",
+          "name": "name",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "identifier",
+          "name": "identifier",
+          "type": "slug",
+          "single": true
+        },
+        {
+          "title": "Is Part Of",
+          "name": "isPartOf",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Locale",
+          "name": "inLanguage",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Keywords",
+          "name": "keywords",
+          "type": "tags"
+        },
+        {
+          "title": "Image",
+          "type": "fields",
+          "name": "image",
+          "fields": [
+            {
+              "title": "Name",
+              "name": "name",
+              "type": "string",
+              "single": true
+            },
+            {
+              "title": "URL",
+              "name": "contentUrl",
+              "type": "image"
+            }
+          ]
+        },
+        {
+          "title": "Creation date",
+          "name": "dateCreated",
+          "type": "datetime",
+          "default": "{{now}}"
+        },
+        {
+          "title": "Last Modified date",
+          "name": "dateModified",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isModifiedDate": true
+        },
+        {
+          "title": "Publishing date",
+          "name": "datePublished",
+          "type": "datetime",
+          "default": "{{now}}",
+          "isPublishDate": true
+        },
+        {
+          "name": "divider",
+          "type": "divider"
+        },
+        {
+          "name": "Optional Fields",
+          "title": "Optional Fields",
+          "type": "heading"
+        },
+        {
+          "title": "URL",
+          "name": "url",
+          "type": "string",
+          "required": false,
+          "single": true
+        },
+        {
+          "title": "Path",
+          "name": "path",
+          "type": "string",
+          "required": false,
+          "single": true
+        },
+        {
+          "title": "Translation of Work",
+          "type": "fields",
+          "name": "translationOfWork",
+          "required": false,
+          "fields": [
+            {
+              "title": "Original work identifier",
+              "name": "@id",
+              "type": "string",
+              "required": false,
+              "single": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
