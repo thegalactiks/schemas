@@ -1,11 +1,10 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/person.json",
     "allOf": [
         {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
         },
-
         {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
         }
@@ -13,12 +12,25 @@
     "title": "Person (author)",
     "description": "https://schema.org/Person",
     "type": "object",
-    "required": [
-        "url",
-        "dateCreated",
-        "dateModified"
-    ],
+    "required": [],
     "properties": {
-
+        "additionalName": {
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "familyName": {
+            "type": "string"
+        },
+        "givenName": {
+            "type": "string"
+        },
+        "jobTitle": {
+            "type": "string"
+        },
+        "telephone": {
+            "type": "string"
+        }
     }
 }
