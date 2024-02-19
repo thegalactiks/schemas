@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/postal-address.schema.json",
+    "title": "Offer",
+    "description": "https://schema.org/PostalAddress",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "addressCountry": {
+            "type": "string"
+        },
+        "addressLocality": {
+            "type": "string"
+        },
+        "addressRegion": {
+            "type": "string"
+        },
+        "postOfficeBoxNumber": {
+            "type": "string"
+        },
+        "postalCode": {
+            "type": "string"
+        },
+        "streetAddress": {
+            "type": "string"
+        }
+    }
+}

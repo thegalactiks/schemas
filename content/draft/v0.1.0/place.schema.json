@@ -1,0 +1,37 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/place.schema.json",
+    "allOf": [
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
+        },
+
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
+        }
+    ],
+    "title": "Place",
+    "description": "https://schema.org/Place",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "address": {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/postal-address.schema.json"
+        },
+        "latitude": {
+            "type": "string"
+        },
+        "longitude": {
+            "type": "string"
+        },
+        "keywords": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "telephone": {
+            "type": "string"
+        }
+    }
+}
