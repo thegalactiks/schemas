@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$extends": "https://schemas.galactiks.com/content/draft/v0.1.0/article.schema.json",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/article.schema.json",
     "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/creative-work.schema.json",
     "title": "WebPage",
     "description": "https://schema.org/WebPage",
