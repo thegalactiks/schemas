@@ -33,7 +33,7 @@
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
         },
         "height": {
-            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
         },
         "keywords": {
             "type": "array",
@@ -60,10 +60,10 @@
             "type": "string"
         },
         "weight": {
-            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
         },
         "width": {
-            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
         }
     }
 }
