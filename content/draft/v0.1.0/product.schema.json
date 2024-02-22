@@ -21,7 +21,7 @@
             "type": "string"
         },
         "depth": {
-            "type": "string"
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
         },
         "gtin": {
             "type": "string"
