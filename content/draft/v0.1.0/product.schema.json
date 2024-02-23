@@ -17,6 +17,9 @@
         "brand": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
         },
+        "category": {
+            "type": "string"
+        },
         "color": {
             "type": "string"
         },
@@ -30,7 +33,7 @@
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/energy-consumption-details.schema.json"
         },
         "hasMeasurement": {
-            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
         },
         "height": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
