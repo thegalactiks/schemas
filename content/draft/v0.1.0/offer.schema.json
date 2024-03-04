@@ -17,9 +17,6 @@
         "priceCurrency"
     ],
     "properties": {
-        "additionalProperty": {
-            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
-        },
         "price": {
             "type": "number"
         },
@@ -29,5 +26,8 @@
         "seller": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
         }
+    },
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
     }
 }

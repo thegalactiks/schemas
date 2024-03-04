@@ -50,9 +50,6 @@
         "model": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
         },
-        "additionalProperty": {
-            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
-        },
         "offers": {
             "type": "array",
             "items": {
@@ -68,5 +65,8 @@
         "width": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/quantitative-value.schema.json"
         }
+    },
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
     }
 }

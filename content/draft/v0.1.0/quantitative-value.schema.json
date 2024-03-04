@@ -16,5 +16,8 @@
         "value": {
             "type": "number"
         }
+    },
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
     }
 }

@@ -5,7 +5,6 @@
         {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
         },
-
         {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
         }
@@ -33,5 +32,8 @@
         "telephone": {
             "type": "string"
         }
+    },
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
     }
 }

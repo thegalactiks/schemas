@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/image.schema.json",
     "title": "Image",
-    "description": "https://schema.org/Image",
+    "description": "https://schema.org/ImageObject",
     "type": "object",
     "required": [
         "contentUrl"
