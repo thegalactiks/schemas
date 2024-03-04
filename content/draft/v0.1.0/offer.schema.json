@@ -25,6 +25,15 @@
         },
         "seller": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
+        },
+        "itemCondition": {
+            "type": "string",
+            "enum": [
+                "https://schema.org/DamagedCondition",
+                "https://schema.org/NewCondition",
+                "https://schema.org/RefurbishedCondition",
+                "https://schema.org/UsedCondition"
+            ]
         }
     },
     "additionalProperties": {
