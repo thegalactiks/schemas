@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/price-specification.schema.json",
+    "allOf": [
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/galactiks-extras.schema.json"
+        },
+        {
+            "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json"
+        }
+    ],
+    "title": "Price Specification",
+    "description": "https://schema.org/PriceSpecification",
+    "type": "object",
+    "required": [
+        "price",
+        "priceCurrency"
+    ],
+    "properties": {
+        "minPrice": {
+            "type": "number",
+            "minimum": 0
+        },
+        "maxPrice": {
+            "type": "number",
+            "minimum": 0
+        },
+        "price": {
+            "type": "number",
+            "minimum": 0
+        },
+        "priceCurrency": {
+            "type": "string",
+            "pattern": "^[A-Z]{3}$"
+        },
+        "validFrom": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "validThrough": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "valueAddedTaxIncluded": {
+            "type": "boolean"
+        }
+    },
+    "additionalProperties": false
+}

@@ -18,10 +18,17 @@
     ],
     "properties": {
         "price": {
-            "type": "number"
+            "type": "number",
+            "minimum": 0
         },
         "priceCurrency": {
             "type": "string"
+        },
+        "priceSpecification": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/price-specification.schema.json"
+            }
         },
         "seller": {
             "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/content-id.schema.json"
