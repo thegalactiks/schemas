@@ -1,0 +1,13 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/language.schema.json",
+    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/thing.schema.json",
+    "title": "Language",
+    "description": "https://schema.org/Language",
+    "type": "object",
+    "required": [],
+    "properties": {},
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
+    }
+}

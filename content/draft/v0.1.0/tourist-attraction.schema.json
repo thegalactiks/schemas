@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/tourist-attraction.schema.json",
+    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/place.schema.json",
+    "title": "TouristAttraction",
+    "description": "https://schema.org/TouristAttraction",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "availableLanguage": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/language.schema.json"
+            }
+        }
+    },
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://schemas.galactiks.com/content/draft/v0.1.0/tourist-destination.schema.json",
+    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/place.schema.json",
+    "title": "TouristDestination",
+    "description": "https://schema.org/TouristDestination",
+    "type": "object",
+    "required": [],
+    "properties": {
+        "touristType": {
+            "anyOf": [
+                {
+                    "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/audience.schema.json"
+                },
+                {
+                    "type": "string"
+                }
+            ]
+        },
+
+        "includesAttraction": {
+            "type": "array",
+            "items": {
+                "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/tourist-attraction.schema.json"
+            }
+        }
+    },
+    "additionalProperties": {
+        "$ref": "https://schemas.galactiks.com/content/draft/v0.1.0/property-value.schema.json"
+    }
+}
